@@ -1,0 +1,255 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18pt;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+  
+  header {
+    background: #1a3a08;
+    color: white;
+    text-align: right;
+    padding: 20px;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+  }
+  
+  h1 { font-size: 30pt; } 
+  h2 { font-size: 24pt; }
+  h3 { font-size: 18pt; }
+  h4 { font-size: 14pt; }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 40vh; 
+    max-height: 20%;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  
+  .company-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    white-space: nowrap;
+  }
+  
+  nav {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    text-align: center;
+  }
+  
+  nav ul li {
+    margin: 5px 0; 
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #d35400;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+  }
+  .introduction {
+    padding: 20px;
+    background-color: #f5f5f5; 
+    margin: 20px 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+.introduction h2 {
+    color: #1a3a08; 
+    margin-bottom: 15px; 
+}
+
+.introduction p {
+    color: #333; 
+    line-height: 1.6; 
+}
+ 
+  .content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .content img {
+    width: 80%; 
+    max-width: 400px; 
+    max-height: 400px; 
+    object-fit: fill; 
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  
+  .text-content {
+    padding-left: 0; 
+    text-align: center;
+  }
+  
+  .text-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .services, .contact-section, .about-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+    padding-bottom: 2rem;
+  }
+  
+  .services h3, .contact-info, .contact-form label, .about-content h2 {
+    color: #333;
+  }
+  
+  .service-package, .service-single, .contact-form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .service-package h4, .service-single h4 {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .service-package p, .service-single p {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="email"],
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: #d35400;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e67e22;
+  }
+  
+  .about-img {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  @media (min-width: 900px) {
+    h1 { font-size: 40pt; }
+    h2 { font-size: 32pt; }
+    h3 { font-size: 24pt; }
+    h4 { font-size: 16pt; }
+  
+    .hero {
+      height: 60vh; 
+    }
+  
+    nav ul {
+      flex-direction: row; 
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin: 0 10px;
+    }
+  
+    nav ul li a {
+      padding: 10px 20px; 
+    }
+  
+    .content {
+      flex-direction: row; 
+    }
+  
+    .content img {
+        width: 80%; 
+        max-width: 400px; 
+        max-height: 400px; 
+        object-fit: fill; 
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+  
+    .text-content {
+      padding-left: 50px; 
+      text-align: left;
+    }
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem; 
+  }
